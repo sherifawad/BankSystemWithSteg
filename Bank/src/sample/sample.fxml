@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+  <tabs>
+    <Tab text="Send">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <Button fx:id="btnsm" layoutX="5.0" layoutY="75.0" mnemonicParsing="false" onAction="#multiChooser" prefHeight="49.0" prefWidth="593.0" text="Secret Messages" />
+                  <Button fx:id="btnso" layoutX="5.0" layoutY="244.0" mnemonicParsing="false" onAction="#fileSaving" prefHeight="49.0" prefWidth="593.0" text="Output File" />
+                  <Button fx:id="btnse" layoutX="105.0" layoutY="310.0" mnemonicParsing="false" onAction="#senderExecute" prefHeight="49.0" prefWidth="100.0" text="Execute" />
+                  <Button fx:id="btnsc" layoutX="394.0" layoutY="310.0" mnemonicParsing="false" prefHeight="49.0" prefWidth="100.0" text="Cancel" />
+                  <Button fx:id="btnsi" disable="true" layoutX="202.0" layoutY="170.0" mnemonicParsing="false" onAction="#steg" prefHeight="49.0" prefWidth="389.0" text="Carrier Image" />
+                  <CheckBox fx:id="chs" layoutX="32.0" layoutY="194.0" mnemonicParsing="false" onAction="#checkBox" text="Use Steganography" />
+                  <Label layoutX="105.0" layoutY="34.0" text="Account Number" />
+                  <TextField fx:id="txtAcc" alignment="CENTER" layoutX="313.0" layoutY="30.0" prefHeight="25.0" prefWidth="181.0" promptText="Account Number" />
+               </children></AnchorPane>
+      </content>
+    </Tab>
+    <Tab text="Receive">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <Button fx:id="btnrm" layoutX="4.0" layoutY="32.0" mnemonicParsing="false" onAction="#singleChooser" prefHeight="100.0" prefWidth="593.0" text="Encrypted connection.Message" />
+                  <Button fx:id="btnro" layoutX="4.0" layoutY="164.0" mnemonicParsing="false" onAction="#outputDir" prefHeight="100.0" prefWidth="593.0" text="Output Directry" />
+                  <Button fx:id="btnre" layoutX="112.0" layoutY="284.0" mnemonicParsing="false" onAction="#receiveExecute" prefHeight="65.0" prefWidth="100.0" text="Execute" />
+                  <Button fx:id="btnrc" layoutX="430.0" layoutY="284.0" mnemonicParsing="false" prefHeight="65.0" prefWidth="100.0" text="Cancel" />
+               </children></AnchorPane>
+      </content>
+    </Tab>
+  </tabs>
+</TabPane>

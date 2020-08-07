@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="KGC">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/out/artifacts/KGC_jar/KGC.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
